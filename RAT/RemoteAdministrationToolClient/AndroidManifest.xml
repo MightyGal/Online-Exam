@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.remoteadministrationtoolclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.remoteadministrationtoolclient.MainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.ConnectActivity"
+            android:label="@string/title_activity_connect" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.ScreenCaptureActivity"
+            android:label="@string/title_activity_screen_capture" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.RemoteExecuteActivity"
+            android:label="@string/title_activity_remote_execute" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.RemoteShutdownOrRestartActivity"
+            android:label="@string/title_activity_remote_shutdown_or_restart" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.RemoteCommandPromptActivity"
+            android:label="@string/title_activity_remote_command_prompt" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.VirtualKeyBoardActivity"
+            android:label="@string/title_activity_virtual_key_board" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.DirectoryProtectionActivity"
+            android:label="@string/title_activity_directory_protection" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.FileSendActivity"
+            android:label="@string/title_activity_file_send" >
+        </activity>
+        <activity
+            android:name="com.remoteadministrationtoolclient.activity.LoginActivity"
+            android:label="RAT" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.remoteadministrationtoolclient.activity.LogActivity" >
+             
+        </activity>
+        
+    </application>
+
+</manifest>
+

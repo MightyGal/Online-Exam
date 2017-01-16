@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoteShutdownOrRestartActivity" >
+
+    <Button
+        android:id="@+id/buttonRemoteShutdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="Remote Shutdown" />
+
+    <Button
+        android:id="@+id/buttonRemoteRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRemoteShutdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Remote Restart" />
+
+</RelativeLayout>

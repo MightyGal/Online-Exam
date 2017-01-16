@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/itemScreenCapture" android:title="@string/idScreenCapture"></item>
+    <item android:id="@+id/itemRefreshScreen" android:title="@string/idRefreshScreen"></item>
+
+</menu>

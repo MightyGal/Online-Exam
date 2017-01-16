@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoteExecuteActivity" >
+
+    <EditText
+        android:id="@+id/editTextRemoteCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:text="@string/idRemoteExecuteCommand" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonRemoteExecute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRemoteCommand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="Execute" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoteCommandPromptActivity" >
+
+    <EditText
+        android:id="@+id/editTextCommandResult"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:singleLine="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextCommandResult"
+        android:ems="10"
+        android:text="[Command]" />
+
+    <Button
+        android:id="@+id/buttonRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextCommand"
+        android:layout_toRightOf="@+id/editTextCommand"
+        android:text="Run" />
+
+</RelativeLayout>
